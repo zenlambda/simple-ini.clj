@@ -1,6 +1,6 @@
-(ns clj-config-ini.core-test
+(ns simple-ini.core-test
   (:require [clojure.test :refer :all]
-            [clj-config-ini.core :refer :all]))
+            [simple-ini.core :refer :all]))
 
 
 (def test-doc

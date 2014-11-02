@@ -1,4 +1,4 @@
-(ns clj-config-ini.core
+(ns simple-ini.core
   (:import (org.apache.commons.configuration HierarchicalINIConfiguration)
            (java.io StringWriter)
   ))
