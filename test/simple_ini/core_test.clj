@@ -2,7 +2,6 @@
   (:require [clojure.test :refer :all]
             [simple-ini.core :refer :all]))
 
-
 (def test-doc
   {:database { :server "example.com"
                :port 5432
