@@ -1,6 +1,9 @@
 # clj-config-ini
 
+[![Build Status](https://travis-ci.org/zenlambda/simple-ini.clj.svg?branch=master)](https://travis-ci.org/zenlambda/simple-ini.clj)
+
 A library for writing ini files.
+
 
 ## Usage
 
