@@ -3,12 +3,22 @@
             [clj-config-ini.core :refer :all]))
 
 
-(def test-doc
+(comment (def test-doc
   {:database { :server "example.com"
                :port 5432
                :file "payroll.dat"}
    :name "John Doe"
    :organisation "Acme Widgets Inc." })
+)
+
+(def test-doc
+  [[:database [ '(This is a subsection...)
+               :server "example.com"
+               :port 5432
+               :file "payroll.dat" ]]
+   '(This is the global section...)
+   [:name "John Doe"]
+   [:organisation "Acme Widgets Inc." ]])
 
 (def test-ini
   "[:database]\n:server = example.com\n:port = 5432\n:file = payroll.dat\n\n")
@@ -18,3 +28,7 @@
     (is (= test-ini (serialize test-doc)))))
 
 
+
+
+
+(serialize test-doc)
