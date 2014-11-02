@@ -5,7 +5,7 @@
 
 (declare fill-config fill-section get-section set-property)
 
-(defn format-config
+(defn serialize
   "Formats a config map as a hierarchical ini file"
   [params-map]
   (let [config (HierarchicalINIConfiguration.)
@@ -14,6 +14,8 @@
       (fill-config config params-map)
       (.save config writer)
       (.toString writer))))
+
+
 
 (defn- fill-config
   "Fills a hiearchical ini config with data from a nested map"

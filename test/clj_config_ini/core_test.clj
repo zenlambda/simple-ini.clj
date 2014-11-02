@@ -15,7 +15,6 @@
 
 (deftest a-test
   (testing "Test that formatted config is same as test string"
-    (println (format-config test-doc))
-    (is (= test-ini (format-config test-doc)))))
+    (is (= test-ini (serialize test-doc)))))
 
 

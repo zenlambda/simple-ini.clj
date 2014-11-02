@@ -16,7 +16,7 @@ A library for writing ini files.
    :organisation "Acme Widgets Inc." })
 
 (def write-ini [file]
-  (spit file (ini/format-config test-doc)))
+  (spit file (ini/serialize test-doc)))
 ```
 
 ## License
