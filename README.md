@@ -1,4 +1,4 @@
-# clj-config-ini
+# simple-ini.clj
 
 [![Build Status](https://travis-ci.org/zenlambda/simple-ini.clj.svg?branch=master)](https://travis-ci.org/zenlambda/simple-ini.clj)
 
