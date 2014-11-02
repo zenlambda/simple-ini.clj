@@ -15,8 +15,6 @@
       (.save config writer)
       (.toString writer))))
 
-
-
 (defn- fill-config
   "Fills a hiearchical ini config with data from a nested map"
   [config params-map]
